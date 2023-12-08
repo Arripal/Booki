@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /****** General ***********/
-* {
+*,
+html {
 	font-family: 'Raleway', sans-serif;
-}
-html,
-* {
-	margin: 0;
 	padding: 0;
+	margin: 0;
 }
+
 :root {
 	--main-color: #0065fc;
 	--main-bg-color: #f2f2f2;
@@ -71,42 +70,42 @@ a {
 	padding: 0 3.125em;
 	height: 4.9375em;
 }
+
+.booki-logo {
+	min-height: inherit;
+	display: flex;
+	align-items: center;
+}
+.header-logo {
+	width: 3.86875em;
+	height: 1.1875em;
+}
+
 .header-links {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-evenly;
 	height: 4.9375em;
-	width: 21.5em;
+	min-width: 21.5em;
 }
 
-.h {
-	display: flex;
-	align-items: flex-end;
-	height: 2.1875em;
-	border-top: 2px solid var(--main-color);
-	margin-top: 1em;
-}
-
-/* TODO : Increase the gap between the link and the overline */
-.hebergement-wrapper {
-	color: var(--main-color);
-}
 .link-wrapper {
 	display: flex;
 	align-items: flex-end;
-	height: 2.1875em;
+	max-height: 2.2em;
+}
+
+.active {
+	color: var(--main-color);
+	border-top: 3px solid var(--main-color);
+}
+.non-active {
+	border-top: 3px solid white;
 }
 .link-wrapper a {
 	font-size: 1rem;
 	margin: 0 auto;
 }
 
-.link-wrapper > .activite-link {
-	margin-left: 4.375em;
-}
-.header-logo {
-	width: 3.86875em;
-	height: 1.1875em;
-}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
 	display: flex;
