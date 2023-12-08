@@ -53,7 +53,7 @@ a {
 }
 
 .card-title {
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 .euro {
@@ -63,7 +63,50 @@ a {
 .neutral-star {
 	color: var(--main-bg-color);
 }
+/****** Header ********/
+.main-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 3.125em;
+	height: 4.9375em;
+}
+.header-links {
+	display: flex;
+	justify-content: flex-end;
+	height: 4.9375em;
+	width: 21.5em;
+}
 
+.h {
+	display: flex;
+	align-items: flex-end;
+	height: 2.1875em;
+	border-top: 2px solid var(--main-color);
+	margin-top: 1em;
+}
+
+/* TODO : Increase the gap between the link and the overline */
+.hebergement-wrapper {
+	color: var(--main-color);
+}
+.link-wrapper {
+	display: flex;
+	align-items: flex-end;
+	height: 2.1875em;
+}
+.link-wrapper a {
+	font-size: 1rem;
+	margin: 0 auto;
+}
+
+.link-wrapper > .activite-link {
+	margin-left: 4.375em;
+}
+.header-logo {
+	width: 3.86875em;
+	height: 1.1875em;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
 	display: flex;
@@ -73,7 +116,7 @@ a {
 .hebergements-and-populaires section {
 	background-color: var(--main-bg-color);
 	border-radius: 20px;
-	padding: 30px;
+	padding: 1.875em;
 	box-sizing: border-box;
 }
 
