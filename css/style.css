@@ -67,12 +67,10 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 3.125em;
 	height: 4.9375em;
 }
 
 .booki-logo {
-	min-height: inherit;
 	display: flex;
 	align-items: center;
 }
@@ -81,27 +79,30 @@ a {
 	height: 1.1875em;
 }
 
-.header-links {
+.header-nav {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: flex-end;
 	height: 4.9375em;
-	min-width: 21.5em;
+	width: 21.5em;
 }
-
-.link-wrapper {
+.nav-links {
+	display: flex;
+	width: 15.25em;
+	justify-content: space-between;
+}
+.nav-link-wrapper {
 	display: flex;
 	align-items: flex-end;
-	max-height: 2.2em;
+	height: 2.1875em;
+	border-top: 2px solid white;
 }
 
-.active {
+.nav-link-wrapper:hover {
+	border-top: 2px solid var(--main-color);
 	color: var(--main-color);
-	border-top: 3px solid var(--main-color);
 }
-.non-active {
-	border-top: 3px solid white;
-}
-.link-wrapper a {
+
+.nav-link-wrapper a {
 	font-size: 1rem;
 	margin: 0 auto;
 }
