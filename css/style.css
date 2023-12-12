@@ -13,6 +13,7 @@ html {
 	--main-color: #0065fc;
 	--main-bg-color: #f2f2f2;
 	--filter-bg-color: #deebff;
+	--title-font-size: 22px;
 }
 
 .fa-solid {
@@ -109,14 +110,11 @@ a {
 /****** Form and Filtres ******/
 /***** Form *****/
 .search-title {
-	font-weight: bold;
-	font-size: 1.375rem;
 	line-height: 2em;
 }
 
 .search-title-small {
 	font-size: 1rem;
-	font-weight: 400;
 }
 
 .search-form {
@@ -162,9 +160,11 @@ a {
 
 .filtres {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
 	max-width: 47.375rem;
+	min-width: 20em;
 	margin-bottom: 2.375em;
 }
 .filtres-title {
@@ -182,10 +182,34 @@ a {
 	font-weight: bold;
 	font-size: 1.063rem;
 	padding: 0 1em;
+	cursor: pointer;
 }
 .filtre > i {
 	margin-right: 0.6em;
 	font-size: 1.375rem;
+}
+
+.filtre:hover {
+	background-color: var(--filter-bg-color);
+}
+
+/***** Infobar ******/
+.infobar {
+	display: flex;
+	align-items: center;
+	margin-bottom: 2.188rem;
+}
+
+.infobar > i {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #deebff;
+	border-radius: 50%;
+	font-size: 0.6rem;
+	width: 22px;
+	height: 22px;
+	margin-right: 0.688rem;
 }
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -203,6 +227,43 @@ a {
 /****** Hebergements ***********/
 .hebergements {
 	width: 65%;
+}
+.hebergements-cards {
+	margin: 33px 0;
+	display: grid;
+	gap: 30px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hebergements-cards .card-title {
+	margin-top: 5px;
+	margin-bottom: 4px;
+	font-size: 0.9rem;
+}
+
+/* TODO : Modification de la font-size 1rem => .9rem , pour ajouter un peu de margin bottom entre le titre et le subtitre, et entre ce dernier et le rating */
+
+.hebergements-cards .card-subtitle {
+	margin-bottom: 3px;
+	font-size: 14px;
+}
+.hebergements-cards .card-rating {
+	margin-bottom: 5px;
+}
+.hebergements-cards .card-content {
+	padding-left: 10px;
+}
+.hebergements-cards img {
+	width: 100%;
+	height: 124px;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+.hebergements .afficher-plus {
+	font-weight: bold;
+	font-size: 1.125rem;
+	cursor: pointer;
 }
 
 /****** Populaires ***********/
@@ -250,6 +311,44 @@ a {
 	margin-bottom: 5px;
 }
 
+/****** Activités *******/
+.activites {
+	margin-top: 69px;
+	padding: 0 30px;
+}
+.activites-title {
+	margin-bottom: 38px;
+}
+.activites-cards {
+	display: flex;
+	justify-content: space-between;
+}
+
+.activites-cards .card {
+	padding: 0;
+	border-radius: 20px;
+	width: 297.5px;
+}
+.activites-cards .card img {
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	width: 100%;
+	height: 380px;
+}
+
+.activites-cards .card-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 59px;
+}
+
+/***** Footer ******/
+.booki-footer {
+	display: flex;
+	justify-content: space-between;
+	height: 163px;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
