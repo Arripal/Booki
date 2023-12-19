@@ -13,7 +13,6 @@ html {
 	--main-color: #0065fc;
 	--main-bg-color: #f2f2f2;
 	--filter-bg-color: #deebff;
-	--title-font-size: 22px;
 }
 
 .fa-solid {
@@ -40,7 +39,7 @@ li {
 }
 .section-title {
 	margin: 0;
-	font-size: 22px;
+	font-size: 1.375rem;
 }
 
 .card {
@@ -120,7 +119,8 @@ li {
 }
 
 .search-form {
-	width: 377px;
+	min-width: 320px;
+	max-width: 23.5625em;
 	display: flex;
 	margin: 2.375em 0;
 }
@@ -140,7 +140,8 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 4em;
+	min-width: 3.125em;
+	padding: 1em;
 	background-color: var(--main-bg-color);
 	color: black;
 	border-top-left-radius: 15px;
@@ -152,10 +153,16 @@ li {
 	color: #fff;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
-	font-size: 1.125rem;
+	font-size: 1.1rem;
 	font-weight: bold;
-	width: 8.25em;
+	min-width: 8.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	cursor: pointer;
+}
+.search-btn-image {
+	display: none;
 }
 /****** Filtres ******/
 
@@ -327,22 +334,25 @@ li {
 }
 
 .activites-cards .card {
+	display: flex;
+	flex-direction: column;
 	padding: 0;
 	border-radius: 20px;
-	width: 297.5px;
+	width: 23%;
+	max-height: 439px;
 }
 .activites-cards .card img {
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 	width: 100%;
-	height: 380px;
+	height: 86.5%;
 }
 
 .activites-cards .card-text {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	height: 59px;
+	height: 13%;
+	padding: 0.5em;
 }
 
 /***** Footer ******/
@@ -405,9 +415,73 @@ li {
 	.populaires-cards .card-subtitle {
 		font-size: 13px;
 	}
+
+	.activites-cards .card {
+		max-height: 270px;
+		object-fit: contain;
+	}
+	.activites-cards .card img {
+		height: 75%;
+	}
+	.activites-cards .card-text {
+		height: 25%;
+	}
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-	/* ... */
+	.main-container {
+		padding: 0;
+	}
+	main {
+		width: 90%;
+		margin: 0 auto;
+	}
+	/***** Header *******/
+	.main-header {
+		height: 115px;
+		flex-direction: column;
+		margin-bottom: 1.8125em;
+	}
+	.main-header .booki-logo {
+		height: 79px;
+	}
+	.main-header .header-nav {
+		height: auto;
+		width: 100%;
+		justify-content: space-evenly;
+	}
+	.header-nav .nav-links {
+		width: 100%;
+	}
+	.header-nav .nav-link-wrapper {
+		padding-bottom: 0.8em;
+		width: 50%;
+		border: none;
+		border-bottom: 2px solid var(--main-bg-color);
+		align-items: center;
+	}
+
+	.header-nav .nav-link-wrapper:hover {
+		border: none;
+		border-bottom: 2px solid var(--main-color);
+	}
+
+	/****** Main Content *************/
+	/******* Form & Filtres **********/
+	.hebergement-search .search-title {
+		line-height: 1.2;
+		margin-bottom: 0.5em;
+	}
+
+	.search-form .search-btn-txt {
+		display: none;
+	}
+	.submit-search {
+		min-width: 45px;
+	}
+	.search-form .search-btn-image {
+		display: inline-block;
+		color: white;
+	}
 }
