@@ -65,13 +65,12 @@ li {
 	color: var(--main-bg-color);
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Header ********/
 .main-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 79px;
+	height: 4.938em;
 }
 
 .booki-logo {
@@ -79,21 +78,17 @@ li {
 	align-items: center;
 }
 .header-logo {
-	width: 61.09px;
-	height: 19px;
+	width: 3.818em;
+	height: 1.188em;
 }
 
 .header-nav {
 	display: flex;
-	justify-content: flex-end;
-	height: 79px;
-	width: 344px;
-}
-.nav-links {
-	display: flex;
-	width: 15.25em;
 	justify-content: space-between;
+	height: inherit;
+	width: 15.25em;
 }
+
 .nav-link-wrapper {
 	display: flex;
 	align-items: flex-end;
@@ -124,14 +119,14 @@ li {
 	border-radius: 15px;
 	max-width: 23.5625em;
 	display: flex;
-	margin: 2.375em 0;
+	margin: 38px 0;
 }
 .search-bar {
 	border: 1px solid var(--main-bg-color);
 	border-right: none;
 	height: 3.0625rem;
 	max-width: 12.25em;
-	min-width: 50%;
+	min-width: 52%;
 	font-size: 1.125rem;
 	text-align: center;
 	font-weight: bold;
@@ -159,7 +154,7 @@ li {
 	border-bottom-right-radius: 15px;
 	font-size: 1.1rem;
 	font-weight: bold;
-	width: 45%;
+	width: 48%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -175,7 +170,7 @@ li {
 	justify-content: space-evenly;
 	align-items: center;
 	max-width: 47.375rem;
-	margin-bottom: 2.375em;
+	margin-bottom: 38px;
 }
 
 .filtres-title {
@@ -192,17 +187,21 @@ li {
 	border-radius: 25px;
 	font-weight: bold;
 	font-size: 1rem;
-	padding: 0 1em;
+	padding: 0 16px;
 	cursor: pointer;
+}
+.filtres .filtre:nth-child(3) {
+	padding-left: 8px;
+	padding-right: 16px;
 }
 .filtre > i {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-right: 0.4em;
-	width: 22px;
-	height: 22px;
-	font-size: 1.1em;
+	margin-right: 6.4px;
+	width: 1.325em;
+	height: 1.325em;
+	font-size: 1.1rem;
 }
 
 .filtre:hover {
@@ -213,7 +212,7 @@ li {
 .infobar {
 	display: flex;
 	align-items: center;
-	margin-bottom: 2.188rem;
+	margin-bottom: 35.008px;
 }
 
 .infobar > i {
@@ -223,8 +222,8 @@ li {
 	border: 1px solid #deebff;
 	border-radius: 50%;
 	font-size: 0.6rem;
-	min-width: 22px;
-	height: 22px;
+	min-width: 1.375rem;
+	height: 1.375rem;
 	margin-right: 0.688rem;
 }
 /****** Hebergements And Populaires ***********/
@@ -257,11 +256,9 @@ li {
 	font-size: 0.9rem;
 }
 
-/* TODO : Modification de la font-size 1rem => .9rem , pour ajouter un peu de margin bottom entre le titre et le subtitre, et entre ce dernier et le rating */
-
 .hebergements-cards .card-subtitle {
 	margin-bottom: 3px;
-	font-size: 14px;
+	font-size: 0.9rem;
 }
 .hebergements-cards .card-rating {
 	margin-bottom: 5px;
@@ -407,7 +404,9 @@ li {
 		flex-direction: row;
 		justify-content: space-between;
 	}
-
+	.populaires-cards .card {
+		margin-top: 22px;
+	}
 	.populaires-cards a {
 		width: 30%;
 	}
@@ -430,6 +429,17 @@ li {
 	.activites-cards .card-text {
 		height: 25%;
 	}
+
+	/***** Filtres ********/
+	.filtres {
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 41.75em;
+	}
+	.filtres-title {
+		margin-bottom: 25px;
+		width: 100%;
+	}
 }
 
 /* Small devices (phones, less than 768px) */
@@ -442,21 +452,18 @@ li {
 	.main-header {
 		height: 115px;
 		flex-direction: column;
-		margin-bottom: 1.8125em;
+		margin-bottom: 30.88px;
 	}
-	.main-header .booki-logo {
+	.booki-logo {
 		height: 79px;
 	}
-	.main-header .header-nav {
+	.header-nav {
 		height: auto;
 		width: 100%;
-		justify-content: space-evenly;
+		align-items: center;
 	}
-	.header-nav .nav-links {
-		width: 100%;
-	}
+
 	.header-nav .nav-link-wrapper {
-		padding-bottom: 0.8em;
 		width: 50%;
 		border: none;
 		border-bottom: 2px solid var(--main-bg-color);
@@ -474,17 +481,14 @@ li {
 	.hebergement-search {
 		padding: 0 1.2em;
 	}
-	.hebergement-search .search-title {
+	.search-title {
 		line-height: 1.2;
 		margin-bottom: 0.5em;
-		text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
 	}
 	/****** FORM *********/
 
 	.search-form {
 		width: 100%;
-		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
-		overflow: hidden;
 		position: relative;
 	}
 	.search-btn-txt {
@@ -496,6 +500,8 @@ li {
 	}
 	.search-bar {
 		padding-left: 0.7em;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
 		text-align: left;
 		min-width: 82%;
 	}
@@ -504,7 +510,8 @@ li {
 		right: 0;
 		height: 49px;
 		border-radius: 15px;
-		width: 14.5%;
+		width: 15%;
+		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 	}
 	.location-icon {
 		width: 18%;
@@ -528,19 +535,14 @@ li {
 		padding: 0 0.2em;
 		justify-content: space-evenly;
 		margin: 10px 0;
-		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 	}
-	.filtre > i {
+	.filtre i {
 		margin: 0;
 	}
 	.filtres-title {
 		grid-column: span 2;
-		text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
 	}
 
-	.infobar span {
-		text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
-	}
 	/***** Hebergments & Populaires **********/
 
 	.hebergements-and-populaires section {
