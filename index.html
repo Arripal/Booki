@@ -36,13 +36,11 @@
 				</div>
 
 				<nav class="header-nav">
-					<div class="nav-links">
-						<div class="nav-link-wrapper">
-							<a href="#hebergements">Hébergements</a>
-						</div>
-						<div class="nav-link-wrapper">
-							<a href="#">Activités</a>
-						</div>
+					<div class="nav-link-wrapper">
+						<a href="#hebergements">Hébergements</a>
+					</div>
+					<div class="nav-link-wrapper">
+						<a href="#activites">Activités</a>
 					</div>
 				</nav>
 			</header>
@@ -64,7 +62,10 @@
 							placeholder="Marseille, France"
 							class="search-bar"
 						/>
-						<button class="submit-search">Rechercher</button>
+						<button class="submit-search">
+							<span class="search-btn-txt">Rechercher</span>
+							<i class="fa-solid fa-magnifying-glass search-btn-image"></i>
+						</button>
 					</form>
 					<div class="filtres">
 						<h3 class="filtres-title">Filtres</h3>
@@ -158,7 +159,7 @@
 									/>
 									<div class="card-content">
 										<div class="card-txt">
-											<h3 class="card-title">Hôtel Les moouettes</h3>
+											<h3 class="card-title">Hôtel Les mouettes</h3>
 											<p class="card-subtitle">
 												Nuit à partir de 76 <span class="euro">€</span>
 											</p>
@@ -353,7 +354,7 @@
 						</div>
 					</section>
 				</div>
-				<section class="activites">
+				<section class="activites" id="activites">
 					<h2 class="activites-title section-title">Activités à Marseille</h2>
 					<div class="activites-cards">
 						<div class="card">
@@ -396,27 +397,23 @@
 				</section>
 			</main>
 			<footer class="booki-footer">
-				<section class="about">
+				<section class="about footer-section">
 					<h2 class="footer-title">A propos</h2>
-					<ul class="footer-links">
-						<li><a href="#">Fonctionnement du site</a></li>
-						<li><a href="#">Condtions générales</a></li>
-						<li><a href="#">Données et confidentialité</a></li>
-					</ul>
+
+					<a href="#">Fonctionnement du site</a>
+					<a href="#">Condtions générales</a>
+					<a href="#">Données et confidentialité</a>
 				</section>
-				<section class="-footer-hebergements">
+				<section class="footer-hebergements footer-section">
 					<h2 class="footer-title">Nos hébergements</h2>
-					<ul class="footer-links">
-						<li><a href="#">Charte qualité</a></li>
-						<li><a href="#">Proposer votre hôtel</a></li>
-					</ul>
+					<a href="#">Charte qualité</a>
+					<a href="#">Proposer votre hôtel</a>
 				</section>
-				<section class="assistance">
+				<section class="assistance footer-section">
 					<h2 class="footer-title">Assistance</h2>
-					<ul class="footer-links">
-						<li><a href="#">Centre d'aide</a></li>
-						<li><a href="#">Nous contacter</a></li>
-					</ul>
+
+					<a href="#">Centre d'aide</a>
+					<a href="#">Nous contacter</a>
 				</section>
 			</footer>
 		</div>
