@@ -519,8 +519,9 @@ li {
 	/********* Filtres *************/
 	.filtres {
 		display: grid;
+		justify-content: flex-start;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 30px 50px 50px;
+		grid-template-rows: 21px 50px 50px;
 		gap: 10px;
 		max-width: 25em;
 		min-width: 14em;
@@ -539,7 +540,6 @@ li {
 		margin: 0;
 	}
 	.filtres-title {
-		margin-bottom: 10px;
 		grid-column: span 2;
 	}
 
