@@ -1,7 +1,5 @@
 {
-  "[html]": {
-    "editor.tabSize": 4
-  },
-  "prettier.htmlWhitespaceSensitivity": "ignore",
-  "editor.detectIndentation": false
+	"[html]": {
+		"editor.tabSize": 4
+	}
 }
