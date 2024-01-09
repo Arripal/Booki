@@ -522,7 +522,10 @@ li {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 30px 50px 50px;
 		gap: 10px;
-		max-width: 25em;
+		justify-content: center;
+		align-items: center;
+
+		/*max-width: 25em; */
 		min-width: 14em;
 		margin-bottom: 2.375em;
 	}
@@ -530,10 +533,12 @@ li {
 		padding-right: 1.7em;
 	}
 	.filtre {
+		justify-self: center;
 		width: 100%;
 		padding: 0 0.2em;
 		justify-content: space-evenly;
 		margin: 10px 0;
+		max-width: 250px;
 	}
 	.filtre i {
 		margin: 0;
